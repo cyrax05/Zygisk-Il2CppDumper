@@ -334,7 +334,7 @@ void il2cpp_api_init(void *handle) {
     } else {
         LOGE("Failed to initialize il2cpp api.");
         //return;
-		
+		sleep(2);
 		il2cpp_api_init(handle);
     }
     while (!il2cpp_is_vm_thread(nullptr)) {
